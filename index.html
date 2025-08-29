@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <meta charset="UTF-8" /> 
+      <title>React based application</title> 
+   </head>
+   <body> 
+      <div id="root"></div>
+      <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> 
+      <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> 
+      <script language="JavaScript"> 
+         const { useState, useEffect, useRef } = React;
+
+         function mainComp(){
+                return (<><h1>hello</h1></>)
+         };
+
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<mainComp />);
+      </script> 
+   </body> 
+</html>
